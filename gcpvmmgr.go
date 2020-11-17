@@ -10,6 +10,7 @@ import (
 	"path"
 	"time"
 
+	pretty "github.com/kr/pretty"
 	log "github.com/sirupsen/logrus"
 )
 
@@ -28,6 +29,7 @@ func main() {
 	if *zone == "" && *region == "" {
 		log.Fatalf("Please specify a valid zone or region\n")
 	}
+	pretty.Println(ctx)
 	computeService, err := compute.NewService(ctx, option.WithScopes(compute.CloudPlatformScope))
 	if err != nil {
 		fmt.Printf("Error while getting service, err: %v\n", err)
