@@ -1,0 +1,6 @@
+[submodule "lib/pretty"]
+	path = lib/pretty
+	url = https://github.com/kr/pretty
+[submodule "lib/logrus"]
+	path = lib/logrus
+	url = https://github.com/sirupsen/logrus

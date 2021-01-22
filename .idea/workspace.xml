@@ -19,12 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e29f3ee-a966-4b7c-8688-da4ffefc3cbb" name="Default Changelist" comment="Added ctx verification">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="3e29f3ee-a966-4b7c-8688-da4ffefc3cbb" name="Default Changelist" comment="Fix build file">
+      <change afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/logrus" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/pretty" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gcpvmmgr.go" beforeDir="false" afterPath="$PROJECT_DIR$/gcpvmmgr.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +44,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1kFpQlK2smqd3HH1CiKQVdA5921" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -82,6 +84,14 @@
       <option name="presentableId" value="Default" />
       <updated>1605306179927</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added ctx verification">
+      <created>1605637572822</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605637572822</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,31 +107,41 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added ctx verification" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added ctx verification" />
+    <MESSAGE value="Fix build file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix build file" />
   </component>
   <component name="WindowStateProjectService">
     <state x="520" y="290" key="#Go_Modules" timestamp="1605306306460">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="520" y="290" key="#Go_Modules/0.0.1440.900@0.0.1440.900" timestamp="1605306306460" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1605306490076">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1605637793952">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605306490076" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1605306490075">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1605637793952" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1605637793950">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1605306490075" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1605306490074">
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1605637793950" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1605637793950">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1605306490074" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1605306490076">
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1605637793950" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1605637793951">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1605306490076" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1605637793951" />
+    <state x="519" y="159" key="RollbackChangesDialog" timestamp="1605637804601">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="519" y="159" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1605637804601" />
+    <state x="320" y="177" key="Vcs.Push.Dialog.v2" timestamp="1605637586122">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="177" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1605637586122" />
   </component>
 </project>
